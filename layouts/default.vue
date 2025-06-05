@@ -5,7 +5,5 @@
 </template>
 <style scoped>
 
-.container{
-  min-height: 80vh;
-}
+
 </style>
