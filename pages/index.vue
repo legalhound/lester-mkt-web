@@ -1,9 +1,9 @@
 <template>
 <div class="landing p-3">
-  <nav class="navbar navbar-expand-lg fixed-top p-3 bg-white">
+  <nav class="navbar navbar-expand-lg fixed-top p-2 bg-white">
     <div class="container">
       <a href="#inicio" class="nav-item nav-link">
-          <img class="mx-auto logo" alt="logo" src="@/assets/logo.png" height="50px" />
+          <img class="mx-auto logo" alt="logo" src="@/assets/logo.png" height="40px" />
       </a>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -28,7 +28,7 @@
     </div>
   </nav>
   <div class="slide-one text-center" id="inicio">
-    <img class="mx-auto mb-3" src="@/assets/logo.png" height="200px" />
+    <img class="mx-auto mb-3" src="@/assets/logo.png" height="150px" />
     <h1>Convierte cada llamada en evidencia:<br/>transcribe, detecta y reporta en tiempo real</h1>
     <p>Nuestra solución transforma las llamadas telefónicas en texto preciso y buscable, permitiendo a entidades de banca privada detectar actividades sospechosas, crear alertas automatizadas y cumplir con las obligaciones regulatorias frente a la CNMV.</p>
     <p>Una herramienta diseñada para reforzar la transparencia, prevenir el fraude y garantizar el cumplimiento normativo con eficiencia y precisión.</p>
@@ -205,13 +205,13 @@
     </div>
     <div class="layout-wrapper-2">
       <div class="text-wrapper-2">
-        <span
+        <p
           v-for="(label, index) in labels"
           :key="index"
-          class="label-2"
+          class="label-2 text-start"
         >   
         <i :class="`fas fa-${label.icon} me-3 mt-1` " />  {{ label.title }} <small class="ms-2 p-0 mt-1"> {{ label.description }}</small>
-        </span>
+        </p>
       </div>
     </div>
   </div>
@@ -807,14 +807,10 @@ p{
   @media(min-width:1435px){
     display: none !important;
   }
-.text-wrapper-2{
-  position: relative;
-  height: 520px; 
-}
+
 .label-2 {
   font-size: 1.4rem;
   color:#24377f;
-  display: flex;
   padding-left: 8px;
   margin: 40px 0px;
   small{
