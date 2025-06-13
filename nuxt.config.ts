@@ -5,8 +5,7 @@ export default defineNuxtConfig({
       'nuxt-mail',
       {
         message: {
-        to: ['silvia.nestares@crisalidalabs.com']
-        //  to: ['vicente.cuellar@crisalidalabs.com','manuel.barbosa@crisalidalabs.com']
+          to: ['vicente.cuellar@crisalidalabs.com','manuel.barbosa@crisalidalabs.com']
         },
         smtp: {
           host: 'smtp.postmarkapp.com',
@@ -21,7 +20,7 @@ export default defineNuxtConfig({
   ],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  css: ['bootstrap/dist/css/bootstrap.min.css', 'aos/dist/aos.css', '@/assets/styles.scss'],
+  css: ['bootstrap/dist/css/bootstrap.min.css', '@/assets/styles.scss'],
   app: {
     head: {
     title: "LesterBot",
@@ -30,7 +29,8 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'
-        }
+        },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
       ]
     }
   }

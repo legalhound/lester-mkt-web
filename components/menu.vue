@@ -1,29 +1,34 @@
 <template>
   <nav class="navbar navbar-expand-lg fixed-top p-2 bg-white">
     <div class="container">
-      <a href="#inicio" class="nav-item nav-link">
+      <a href="#inicio" class="navbar-brand">
           <img class="mx-auto logo" alt="logo" src="@/assets/logo.png" height="40px" />
       </a>
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link"  href="#funcionalidad-clave">Funcionalidad Clave</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#seguridad-cumplimiento">Seguridad y cumplimiento</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  href="#por-que-lester">¿Por qué elegir Lester?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#on-premises">On-premises</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#faq">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="page-2 nav-link" href="#contacto">Contacto</a>
-        </li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="#funcionalidad-clave">Funcionalidad Clave</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#seguridad-cumplimiento">Seguridad y cumplimiento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#por-que-lester">¿Por qué elegir Lester?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#on-premises">On-premises</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="page-2 nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </template>

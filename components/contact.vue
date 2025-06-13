@@ -106,7 +106,7 @@ const sendMail = async () => {
 console.log(useMail());
   try {
     const messageText = `
-      Nuevo mensaje recibido desde el formulario de contacto de Lester:
+      Nuevo mensaje recibido desde el formulario de contacto de LesterBot:
       Nombre: ${form.value.firstName} ${form.value.name}
       Email: ${form.value.email}
       Cargo: ${form.value.position}
@@ -117,7 +117,7 @@ console.log(useMail());
       ${form.value.comments}
           `.trim()
     await send({
-      subject: `Nuevo mensaje de ${form.value.name} ${form.value.firstName}`,
+      subject: `Nuevo mensaje de ${form.value.name} ${form.value.firstName} [LesterBot]`,
       from:'no-reply@crisalidalabs.com',
       text: messageText,
     })
