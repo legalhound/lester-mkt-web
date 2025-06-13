@@ -1,7 +1,7 @@
 <template>
-    <!--<Menu/>-->
-    <slot></slot>  
-<!--<Footer/>-->  
+  <Menu/>
+  <slot></slot>  
+<!--<Footer/>-->
 </template>
 <style scoped>
 

@@ -5,10 +5,53 @@
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
-body{
-  font-size: 14px !important;
-}
+
 .btn-primary{
   background-color: #24377f !important;
   border-color: none !important;
+}
+  @keyframes grow-up {
+      from {opacity:0; scale: 0%}
+      to {opacity:1; scale: 100%}
+  }
+  @keyframes show-background{
+      from {box-shadow: none;}
+      to{ box-shadow: 0 0 10px  #7081b2;}
+  }
+
+  @keyframes logo-up {
+      from { scale: 0%}
+      to { scale: 100%;}
+  }
+  @keyframes topic-up {
+      from { margin-left: 100%}
+      to { margin-left: 0%}
+  }
+  @keyframes show-up {
+      from {opacity:0; }
+      to {opacity:1;}
+  }
+h1 {
+  font-size: 50px !important;
+  color: #7081b2;
+  margin-bottom: 20px;
+}
+h2 {
+  background:  #24377f;
+  font-size: 2em;
+  font-weight: 700 !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  view-timeline-name: --h2;
+  view-timeline-axis: block;
+  animation-name: grow-up;
+  animation-timeline: --h2;
+  animation-range: entry 25% cover 50%;
 }

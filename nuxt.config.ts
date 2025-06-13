@@ -5,7 +5,8 @@ export default defineNuxtConfig({
       'nuxt-mail',
       {
         message: {
-          to: ['vicente.cuellar@crisalidalabs.com','manuel.barbosa@crisalidalabs.com']
+        to: ['silvia.nestares@crisalidalabs.com']
+        //  to: ['vicente.cuellar@crisalidalabs.com','manuel.barbosa@crisalidalabs.com']
         },
         smtp: {
           host: 'smtp.postmarkapp.com',
