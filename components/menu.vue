@@ -63,7 +63,7 @@
 </script>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
   .logo{
     animation: logo-up linear both;
     animation-timeline: scroll(root);
@@ -73,6 +73,9 @@
   margin: 0px !important;
   border: none !important;
   animation: show-background linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 400px;
+
 }
 
 </style>

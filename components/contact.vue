@@ -1,6 +1,6 @@
 <template>
 <div class="slide-eight text-center" id="contacto">
-  <h2>Contacto</h2>
+  <h2>Contacta con nosotros</h2>
     <p>Solicita una demo o resuleve cualquier duda que tengas. Nos pondremos en contacto contigo.</p>
     <div class="row background-blue">
       <form @submit.prevent="sendMail">
@@ -136,9 +136,10 @@ console.log(useMail());
 .form{
   margin: 20px;
   padding: 20px;
-  max-width: 900px;
+  max-width: 1000px;
 } 
 .form-control{
+  height: 52px;
   width: 100%;
   border-color:#24377f !important;
   border-radius: none;
@@ -147,6 +148,7 @@ console.log(useMail());
 }
 textarea{
   border-radius: 7px !important;
+  padding: 10px;
   border-color:#24377f !important;
   width: 100%;
   outline: none !important;

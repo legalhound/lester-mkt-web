@@ -63,6 +63,10 @@
     }
     .feature-row {
       margin: 30px 0px;
+      opacity: 0;
+      animation: show-up 1s ease forwards;
+      animation-timeline: view() ;
+      animation-range: entry 0% cover 70%;
     }
     .feature-icon {
       font-size: 1.5rem;

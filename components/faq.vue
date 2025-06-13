@@ -146,4 +146,10 @@
     text-align: left !important;
   }
 }
+.accordion-button:focus{
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed){
+  background-color: #e8e8e8 !important; 
+}
 </style>

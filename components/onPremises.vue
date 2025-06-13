@@ -67,6 +67,11 @@
     border-radius: 0.5rem;
     transition: transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    view-timeline-name: --topic;
+    view-timeline-axis: block;
+    animation-name: topic-up;
+    animation-timeline: --topic;
+    animation-range: entry 0% cover 30%;
   }
   .fact-icon {
     font-size: 2rem;
