@@ -1,6 +1,6 @@
 <template>
 <div class="footer w-100 mt-3 pt-2 text-center">
-    <p>Crisálida Labs 2025</p>  
+    <p><a href="https://crisalidalabs.com/" target="_blank">Crisálida Labs 2025</a></p>  
 </div>
 
 </template>
@@ -14,8 +14,10 @@
 .footer{
   box-shadow: 0 0 10px #cdcdcd;
   height: 50px;
-  p{  
+  p >a{  
     font-size: 0.8em;
+    color: black;
+    text-decoration: none;
   }
 
 } 

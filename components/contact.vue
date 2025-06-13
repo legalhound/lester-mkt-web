@@ -6,7 +6,7 @@
       <form @submit.prevent="sendMail">
           <div class="row">
             <div class="col-12">
-              <div class="form mx-auto mt-3">
+              <div class="form mx-auto mt-3 pb-0">
                 <div class="row">
                   <div class="col-6 text-start">
                     <input type="text" 
@@ -65,13 +65,13 @@
                     <textarea class="mt-2" name="coments" rows="4" cols="30" v-model="form.comments" ></textarea>    
                   </div> 
                 </div>
-              </div>
+              <button type="submit" class="btn btn-primary mt-3 mb-1"> Envianos tus datos</button>     
             </div>
+          </div>
         </div>  
       </form>
     </div>
     <div class="col-12 text-center">
-      <button type="submit" class="btn btn-primary mt-3 mb-1"> Envianos tus datos</button> 
       <p><small>*Enviando estos datos aceptas nuestra política de privacidad</small></p>
     </div>
   </div>
@@ -154,5 +154,18 @@ textarea{
 }
 .background-blue{
   background-color:#24377f !important;
+}
+.btn-primary{
+background-color: #7081b2 !important;
+  color: white;
+  border: none !important;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 10px 15px rgba(0, 0, 0, 0.3),   /* sombra principal hacia abajo */
+    0 4px 6px rgba(0, 0, 0, 0.2);     /* sombra secundaria más difusa */
+}
+.btn-primary:hover {
+  background-color:#7080b2d4  !important;
+  transform: translateY(-3px);
 }
 </style>
